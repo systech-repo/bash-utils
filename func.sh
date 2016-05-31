@@ -24,7 +24,7 @@
 #       RETURNS:  1 si l'utilisateur n'a pas les droits root
 #-------------------------------------------------------------------------------
 
-check_root(){ if [[ $(id -u) -ne 0 ]]; then echo -e "\e[0;31m[-] Error: need to be root to perform this action.\e[0;m"; exit 1; fi }
+check_root(){ if [[ $(id -u) -ne 0 ]]; then echo -e "\e[0;31m[-] Error: need to be root to perform this action.\e[0;m"; exit 1; fi } # ----------  end of function check_root  ----------
 
 
 #---  FUNCTION  ----------------------------------------------------------------
